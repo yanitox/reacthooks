@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.columnaForm{
+  padding: 1rem;
+  width: 35%;
+}
+.columnaForm h2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: white;
+}
+.columnaCita{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnaCita h2{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
