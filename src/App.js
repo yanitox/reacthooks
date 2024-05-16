@@ -14,8 +14,11 @@ function App() {
     setCitas([...citas, nuevaCita]);
   };
   const eliminarCita = (id) => {
-    const citasActualizadas = citas.filter(cita => cita.id !== id);
-    setCitas(citasActualizadas);
+    const index = citas.findIndex(cita => cita.id === id);
+    if (index !== -1) {
+      const citasActualizadas = [...citas.slice(0, index), ...citas.slice(index + 1)];
+      setCitas(citasActualizadas);
+    }
   };
   return (
     
