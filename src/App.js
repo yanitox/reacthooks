@@ -31,12 +31,12 @@ function App() {
         </div>
         <div className='columnaCita'>
           <Subtitulo texto={"ADMINISTRA TUS CITAS"} />
-          <Listado citas={citas} eliminarCita={eliminarCita} />
+          <div className='columnaTurno'>
+        <Turno citas={citas} eliminarCita={eliminarCita} />
+          </div>
         </div>
       </div>
-      <div className='columnaTurno'>
-        <Turno citas={citas} eliminarCita={eliminarCita} />
-      </div>
+      
   
         
       </>
